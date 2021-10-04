@@ -1,0 +1,44 @@
+#--------
+#My_Own_Recursion
+#Graden_rusk
+#--------
+
+import turtle
+import time
+
+###----Funtions----##
+
+def Main():
+    print("I recreated a heartbeat, cause why not.")
+    time.sleep(3)
+    turt = turtle.Turtle()
+    linelen = 3
+    turt.backward(345)
+    turt.clear()
+    cool(turt, linelen)
+    
+def cool(turt, linelen):
+    if linelen > 0 :
+        turt.speed(5)
+        turt.color("red")
+        turt.forward(15)
+        turt.degrees()
+        turt.right(60)
+        turt.forward(25)
+        turt.left(140)
+        turt.forward(175)
+        turt.right(160)
+        turt.forward(250)
+        turt.left(160)
+        turt.forward(160)
+        turt.right(160)
+        turt.forward(65)
+        turt.left(80)
+        turt.forward(75)
+        linelen = linelen - 1
+        cool(turt, linelen)
+        
+#----Main_code_starts_Here----#  
+    
+Main()
+    
